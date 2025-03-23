@@ -1,0 +1,374 @@
+body {
+      font-family: ubuntu, sans-serif;
+     margin: 0px;
+     padding: 0px;
+     line-height: 1.6;
+     background-color: #f4f4f4;
+}
+.header {
+     background-color: #287265;
+     color: white;
+     padding: 40px 20px;
+     text-align: center;
+     min-height: 40px;
+}
+.header nav ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display : flex;
+  justify-content: center;
+  gap: 20px;
+ 
+}
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+ul li a {
+   color: white;
+   letter-spacing: 0.1rem;
+   text-decoration: none;
+}
+
+ul li a:hover {
+  color: #ffd358;
+  text-decoration: underline;
+}
+
+.menu li {
+  float: left;
+  padding: 10px;
+}
+.menu li a {
+  text-decoration: none;
+}
+.first-item {
+  font-weight: bold;
+  margin-right: auto;
+}
+
+table {
+  background-color: #f0f0f0;
+  border-collapse: collapse;
+  width: 30%;
+}
+
+table th, table td {
+  padding: 10px; 
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#presentation .presentation-image img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+#presentation .presentation-container {
+  display: flex; /* Utilise Flexbox pour aligner les éléments */
+  align-items: center; /* Centre verticalement le texte et l'image */
+  justify-content: space-between; /* Ajoute de l'espace entre le texte et l'image */
+  gap: 20px; /* Ajoute un espace entre le texte et l'image */
+}
+
+#presentation .presentation-text {
+  flex: 1; /* Le texte occupe 1 part de l'espace disponible */
+  text-align: center; /* Aligne le texte à gauche */
+  font-size: 2rem; /* Agrandit la taille du texte */
+}
+
+#presentation .presentation-image {
+  flex: 1; /* L'image occupe 1 part de l'espace disponible */
+  text-align: right; /* Aligne l'image à droite */
+}
+
+#presentation .presentation-image img {
+  max-width: 100%; /* L'image ne dépasse pas la largeur de son conteneur */
+  height: auto; /* Maintient les proportions de l'image */
+  border-radius: 8px; /* Ajoute des coins arrondis à l'image (optionnel) */
+}
+
+#apropos {
+  background-color: #9dbcb6b6;
+  color: rgb(18, 17, 17);
+  padding:  30px 10px;
+  text-align: center;
+  min-height: 20px;
+}
+
+#apropos h2 {
+  color:#ffd358;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+#apropos p {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1; ;
+  margin-bottom: 0%;
+}
+
+#apropos {
+  background-color: #9dbcb6b6; /* Couleur de fond */
+  color: rgb(18, 17, 17); /* Couleur du texte */
+  padding: 30px 20px; /* Espacement intérieur */
+  min-height: 20px;
+}
+
+#apropos h2 {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px; /* Réduit l'espace sous le titre */
+}
+
+#apropos.apropos img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+#apropos .apropos-container {
+  display: flex; /* Utilise Flexbox pour aligner les éléments horizontalement */
+  align-items: flex-start; /* Centre verticalement les éléments */
+  justify-content: space-between; /* Ajoute de l'espace entre le texte et l'image */
+  gap: 20px; /* Ajoute un espace entre le texte et l'image */
+}
+
+#apropos .apropos-text {
+  flex: 2; /* Le texte occupe 2 parts de l'espace disponible */
+  text-align: left; /* Aligne le texte à gauche */
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;/* Taille du texte */
+}
+
+#apropos .apropos-image {
+  flex: 1; /* L'image occupe 1 part de l'espace disponible */
+  text-align: right; /* Aligne l'image à droite */
+}
+
+#apropos .apropos-image img {
+  width: 100%; /* L'image occupe toute la largeur de son conteneur */
+  max-width: 200px; /* Limite la largeur maximale de l'image */
+  height: auto; /* Maintient les proportions de l'image */
+  border-radius: 50%; /* Rend l'image ronde */
+  border: 5px solid #fff; /* Ajoute une bordure blanche autour de l'image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet esthétique */
+}
+
+.btn {
+  display: inline-block;
+  background-color: #287265; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement interne */
+  font-size: 1rem; /* Taille du texte */
+  text-decoration: none; /* Supprime le soulignement */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s ease; /* Animation pour le survol */
+  margin-top: 20px; 
+  align-self: center;/* Espacement au-dessus du bouton */
+}
+
+.btn:hover {
+  background-color: #ffd358; /* Couleur de fond au survol */
+  color: #287265; /* Couleur du texte au survol */
+}
+
+#projets {
+  color:whitesmoke;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+#projets {
+  background: linear-gradient(135deg, #287265, #9dbcb6); /* Dégradé vert */
+  color: white; /* Texte en blanc */
+  padding: 40px 20px; /* Espacement intérieur */
+  border-radius: 8px; /* Coins arrondis (optionnel) */
+}
+
+/* Section Projets */
+#projets .project-gallery {
+  display: flex; /* Aligne les projets horizontalement */
+  gap: 20px; /* Ajoute un espace entre les projets */
+  flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+  justify-content: center; /* Centre les projets horizontalement */
+}
+
+#projets .project-item {
+  background-color: #f9f9f9; /* Couleur de fond des zones de texte */
+  border: 1px solid #ddd; /* Bordure fine autour de chaque projet */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 20px; /* Espacement intérieur */
+  text-align: center; /* Centre le contenu à l'intérieur */
+  width: 300px; /* Largeur fixe pour chaque projet */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+  transition: transform 0.3s ease; /* Animation au survol */
+}
+
+#projets .project-item:hover {
+  transform: translateY(-5px); /* Légère élévation au survol */
+}
+
+#projets .project-item img {
+  max-width: 100%; /* L'image ne dépasse pas la largeur du conteneur */
+  height: auto; /* Maintient les proportions de l'image */
+  border-radius: 5px; /* Coins arrondis pour l'image */
+  margin-bottom: 15px; /* Espacement sous l'image */
+}
+
+#projets .project-item p {
+  font-size: 1rem; /* Taille du texte */
+  color: #333; /* Couleur du texte */
+  margin-bottom: 15px; /* Espacement sous la description */
+}
+
+#projets .project-item .btn {
+  display: inline-block;
+  background-color: #287265; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement interne */
+  font-size: 1rem; /* Taille du texte */
+  text-decoration: none; /* Supprime le soulignement */
+  border-radius: 5px; /* Coins arrondis */
+  transition: background-color 0.3s ease; /* Animation au survol */
+}
+
+#projets .project-item .btn:hover {
+  background-color: #ffd358; /* Couleur de fond au survol */
+  color: #287265; /* Couleur du texte au survol */
+}
+
+/* Section Compétences */
+#competences {
+  background-color: #e0f7fa; /* Bleu clair doux */
+  color: #333; /* Texte en gris foncé */
+  padding: 40px 20px; /* Espacement intérieur */
+  text-align: center; /* Centre le contenu */
+  border-radius: 8px; /* Coins arrondis */
+}
+
+#competences h2 {
+  font-size: 2rem; /* Taille du titre */
+  color: #287265; /* Couleur du titre */
+  margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.skills-container {
+  max-width: 600px; /* Largeur maximale de la section */
+  margin: 0 auto; /* Centre la section horizontalement */
+}
+
+.skill {
+  margin-bottom: 20px; /* Espacement entre les compétences */
+}
+
+.skill p {
+  font-size: 1.2rem; /* Taille du texte des compétences */
+  margin-bottom: 5px; /* Espacement sous le nom de la compétence */
+  text-align: left; /* Aligne le texte à gauche */
+}
+
+.progress-bar {
+  background-color: #ddd; /* Couleur de fond de la barre */
+  border-radius: 20px; /* Coins arrondis */
+  overflow: hidden; /* Cache le débordement */
+  height: 20px; /* Hauteur de la barre */
+  width: 100%; /* Largeur de la barre */
+}
+
+.progress {
+  background-color: #287265; /* Couleur de la progression */
+  height: 100%; /* Remplit toute la hauteur de la barre */
+  border-radius: 20px; /* Coins arrondis */
+  transition: width 0.5s ease; /* Animation pour le remplissage */
+}
+
+/* Section Contact */
+#contact {
+  background-color: #1f1d1a; /* Beige clair */
+  color: #333; /* Texte en gris foncé */
+  padding: 40px 20px; /* Espacement intérieur */
+  text-align: center; /* Centre le contenu */
+  border-radius: 8px; /* Coins arrondis */
+}
+
+#contact h2 {
+  font-size: 2rem; /* Taille du titre */
+  color: #287265; /* Couleur du titre */
+  margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+#contact p {
+  font-size: 1rem; /* Taille du texte */
+  margin-bottom: 20px;
+  color: #ddd; /* Espacement sous le texte */
+}
+
+.contact-form {
+  max-width: 600px; /* Largeur maximale du formulaire */
+  margin: 0 auto; /* Centre le formulaire */
+  text-align: left; /* Aligne le texte à gauche */
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #287265; /* Couleur des labels */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Prend toute la largeur */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Bordure fine */
+  border-radius: 5px; /* Coins arrondis */
+  font-size: 1rem;
+}
+
+.contact-form button {
+  display: inline-block;
+  background-color: #287265; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ffd358; /* Couleur de fond au survol */
+  color: #287265; /* Couleur du texte au survol */
+}
+
+/* Pied de page */
+#footer {
+  background-color:  #287265;; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  padding: 20px 10px; /* Espacement intérieur */
+  text-align: center; 
+}
+
+#footer .footer-container {
+  max-width: 500px; /* Largeur maximale du contenu */
+  margin: 0 auto; /* Centre le contenu horizontalement */
+}
+
+#footer p {
+  margin: 0; /* Supprime les marges */
+  font-size: 1rem; /* Taille du texte */
+}
